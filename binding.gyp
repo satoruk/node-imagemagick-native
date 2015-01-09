@@ -81,10 +81,11 @@
         }],
         ['OS=="linux"', { # not windows not mac
           "libraries": [
-            '<!@(Magick++-config --ldflags --libs)',
+            '<!@(Magick++-config --ldflags --libs)'
           ],
           'cflags': [
-            '<!@(Magick++-config --cflags --cppflags)'
+            '<!@(Magick++-config --cflags --cppflags)',
+            '-fopenmp -I/app/.apt/usr/include/ImageMagick'
           ],
         }]
       ]
