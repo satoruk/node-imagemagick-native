@@ -85,7 +85,8 @@
           ],
           'cflags': [
             '<!@(Magick++-config --cflags --cppflags)',
-            '-fopenmp -I/app/.apt/usr/include/ImageMagick'
+            '-fopenmp',
+            '-I/app/.apt/usr/include/ImageMagick'
           ],
         }]
       ]
